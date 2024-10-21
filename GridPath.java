@@ -1,6 +1,6 @@
 public class GridPath
 {
-    private int[][] grid;
+    public int[][] grid;
     public Location getNextLoc(int row, int col)
     { 
         Location rightward = new Location(row, col + 1); 
