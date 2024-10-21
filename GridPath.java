@@ -22,5 +22,13 @@ public class GridPath
     }
 
     public int sumPath(int row, int col)
-    {}
+    {
+        int sum = grid[row][col];
+        Location slay = getNextLoc(row, col);
+        while (slay != null)
+        {
+            sum += grid[slay.getRow()][slay.getCol()];
+            
+        }
+    }
 }
