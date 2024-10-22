@@ -21,6 +21,14 @@ public class Main
         System.out.println(holmer.getNextLoc(4, 3));
         System.out.println(holmer.getNextLoc(4, 3).getRow() + "," + holmer.getNextLoc(4, 3).getCol());
 
-        
+        GridPath pookie = new GridPath(); 
+        pookie.grid = new int [][] 
+        {
+            {12, 30, 40, 25, 5}, 
+            {11, 3, 22, 15, 43},
+            {7, 2, 9, 4, 0},
+            {8, 33, 18, 6, 1}
+        }; 
+        System.out.println(pookie.sumPath(1,1));
     }
 }

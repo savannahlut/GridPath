@@ -28,7 +28,12 @@ public class GridPath
         while (slay != null)
         {
             sum += grid[slay.getRow()][slay.getCol()];
-            
-        }
+            if (slay.getRow() < grid.length - 1 || slay.getCol() < grid.length - 1)
+            {
+                slay = getNextLoc(slay.getRow(), slay.getCol());
+            }else{
+                slay = null;
+            }
+        } return sum;
     }
 }
