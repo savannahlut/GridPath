@@ -30,5 +30,7 @@ public class Main
             {8, 33, 18, 6, 1}
         }; 
         System.out.println(pookie.sumPath(1,1));
+        // my extra test case
+        System.out.println(pookie.sumPath(3,0));
     }
 }
